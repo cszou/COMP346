@@ -24,7 +24,7 @@ public class Driver {
     	  ******************************************************************************************************************************************/
         
     	Network objNetwork = new Network("network");            /* Activate the network */
-        objNetwork.start();
+        objNetwork.start();										/*start the network thread*/
         Server objServer = new Server();       
         /* Complete here the code for the main method ...*/
         objServer.start();
@@ -32,6 +32,5 @@ public class Driver {
         Client receivingClient = new Client("receiving");
         sendingClient.start();
         receivingClient.start();
-        
     }
 }

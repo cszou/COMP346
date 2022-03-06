@@ -1,0 +1,1 @@
+The runtime for both thread gets shorter after changing the maxNbPackets to 20. The reason is because each thread can do porcess more transactions without yield and wait. Less time for changin the running threads.

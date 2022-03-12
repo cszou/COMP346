@@ -11,10 +11,10 @@ public class SharedArrayGame extends Thread {
 	}
 	public void run() {
 		for (int i=0; i<NI; i++) {
-			synchronized (o) {
+//			synchronized (o) {
 				a[index] = tid;
 				index++;
-			}
+//			}
 		}
 	}
 	
